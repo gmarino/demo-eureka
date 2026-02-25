@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  demo-eureka-service:
+    image: gmarino/demo-eureka:1.0.0-SNAPSHOT
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - prova-network
+
+networks:
+  prova-network:
